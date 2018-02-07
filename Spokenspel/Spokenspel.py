@@ -10,7 +10,7 @@ from turtle import *
 
 def teken_deuren(aantal_deuren):
     reset() #leeg het speelveld
-    speed("fastest")
+    speed("fastest") #verhoog de snelheid van het spel
 
     penup()
     setposition(-300, 0)
