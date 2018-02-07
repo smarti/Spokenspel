@@ -42,21 +42,35 @@ def teken_b():
 
 def teken_c():
     penup()
-    forward(23)
+    forward(50)
+    pendown()
+    circle(40, -210, 30)
+    circle(40, 240, 30)
+    circle(40, -30, 30)
+    penup()
+    forward(30 + 10)
+    pendown()
+
 
 # ---------------------------------------------------
 # -                                                 -
 # -                                                 -
-# - PROGRAMMA                                       -
+# -                 PROGRAMMA                       -
 # -                                                 -
 # -                                                 -
 # ---------------------------------------------------
 
-#woord = input("Geef woord: ")
+woord = input("Geef woord: ")
 
 reset() #leeg het speelveld
 speed("fastest") #verhoog de snelheid van het spel
-teken_a()
-teken_b()
+
+letter = 0
+while letter < len(woord):
+    functie = "teken_" + woord[letter]
+    functie = eval(functie)
+    functie()
+
+    letter = letter + 1
 
 input()
