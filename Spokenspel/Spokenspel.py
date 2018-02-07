@@ -99,7 +99,6 @@ def teken_geest(ghost_door):
     forward(55)
     right(30)
 
-
 # ---------------------------------------------------
 # -                                                 -
 # -                                                 -
@@ -138,7 +137,6 @@ while feeling_brave:
     teken_gekozen_deur(door_num)
     teken_geest(ghost_door)
     input('<enter> to continue')
-
 
 print('Run away!')
 print('Game over! You scored: ', score)
